@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: white;;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="date"],
+        input[type="time"],
+        input[type="text"],
+        input[type="email"],
+        select,
+        button {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #error {
+            color: red;
+            margin-top: 10px;
+        }
+
+        #success {
+            color: green;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Schedule an Appointment</h1>
+        <form id="appointmentForm">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required><br>
+            
+            <label for="name">Patient Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="doctor">Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">Select a doctor</option>
+                <option value="Dr. Smith">Dr. Rajendran, Karur</option>
+                <option value="Dr. Johnson">Dr. Jeevanandhan, Dindigul</option>
+                <option value="Dr. Williams">Dr. Arul Durai Arasu, Madurai</option>
+            </select><br>
+            
+            <button type="submit">Schedule</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            let date = document.getElementById('date').value;
+            let time = document.getElementById('time').value;
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let doctor = document.getElementById('doctor').value;
+            
+            // Validate email format
+            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('message').innerHTML = '<p id="error">Invalid email format</p>';
+                return;
+            }
+            
+            // Make AJAX request to save appointment
+            let xhr = new XMLHttpRequest();
+            xhr.open('POST', 'save-appointment.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        document.getElementById('message').innerHTML = '<p id="success">Appointment scheduled successfully</p>';
+                        document.getElementById('appointmentForm').reset();
+                    } else {
+                        document.getElementById('message').innerHTML = '<p id="error">Error scheduling appointment</p>';
+                    }
+                }
+            };
+            xhr.send(JSON.stringify({ date: date, time: time, name: name, email: email, doctor: doctor }));
+        });
+    </script>
+</body>
+</html>

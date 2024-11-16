@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/index.css">
+<title>Medicare</title>
+<script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <h1>MEDICARE</h1>
+  </div>
+  <ul id="menuList">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="patients.html">Patients</a></li>
+    <li><a href="provides.html">Providers</a></li>
+    <li><a href="donation.html">Donation</a></li>
+    <li><a href="auth.html">Login</a></li>
+  </ul>
+  <div class="menu-icon">
+    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+  </div>
+</nav>
+
+    <script>
+        let menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "400px"
+            }
+            else{
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+  <div class="container" style="margin:auto">
+    <h1>Doctor Details</h1>
+    <div class="doctor-card">
+      <img src="assets\img\doctor2.jpg" alt="Doctor">
+      <div class="details">
+        <h2>Dr. Rajendran</h2>
+        <p>Specialty: Cardiology</p>
+        <p>Education: MD, Cardiology</p>
+        <p>Experience: 10 years</p>
+        <p>Location:Apollo Hospital , Dindigul</p>
+        <p>Contact: 8793422456</p>
+      </div>
+      <div class="action-links">
+        <a href="#">Book Appointment</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="doctor-card">
+      <img src="assets\img\doctor2.jpg" alt="Doctor">
+      <div class="details">
+        <h2>Dr. Dinesh</h2>
+        <p>Specialty: bone</p>
+        <p>Education: MD, Cardiology</p>
+        <p>Experience: 10 years</p>
+        <p>Location:SAR Hospital , Dindigul</p>
+        <p>Contact: 9793422456</p>
+      </div>
+      <div class="action-links">
+        <a href="#">Book Appointment</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="doctor-card">
+      <img src="assets\img\doctor2.jpg" alt="Doctor">
+      <div class="details">
+        <h2>Dr. hemalatha</h2>
+        <p>Specialty: Cardiology</p>
+        <p>Education: MD, Cardiology</p>
+        <p>Experience: 10 years</p>
+        <p>Location:Apollo Hospital , Dindigul</p>
+        <p>Contact: 8793422456</p>
+      </div>
+      <div class="action-links">
+        <a href="#">Book Appointment</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="doctor-card">
+      <img src="assets\img\doctor2.jpg" alt="Doctor">
+      <div class="details">
+        <h2>Dr. gayathri</h2>
+        <p>Specialty: heart</p>
+        <p>Education: MD, Cardiology</p>
+        <p>Experience: 10 years</p>
+        <p>Location:ragav Hospital , Dindigul</p>
+        <p>Contact: 8793422456</p>
+      </div>
+      <div class="action-links">
+        <a href="#">Book Appointment</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="doctor-card">
+      <img src="assets\img\doctor2.jpg" alt="Doctor">
+      <div class="details">
+        <h2>Dr. lakshmi</h2>
+        <p>Specialty: teeth</p>
+        <p>Education: MD, Cardiology</p>
+        <p>Experience: 10 years</p>
+        <p>Location:Vcare Hospital , Dindigul</p>
+        <p>Contact: 8793422456</p>
+      </div>
+      <div class="action-links">
+        <a href="#">Book Appointment</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+
+  </div>
+  
+
+</body>
+</html>

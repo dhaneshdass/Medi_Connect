@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/donation.css">
+<title>Medicare</title>
+<script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+ <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <h1>MEDICARE</h1>
+  </div>
+  <ul id="menuList">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="patients.html">Patients</a></li>
+    <li><a href="provides.html">Providers</a></li>
+    <li><a href="donation.html">Donation</a></li>
+    <li><a href="auth.html">Login</a></li>
+  </ul>
+  <div class="menu-icon">
+    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+  </div>
+</nav>
+
+    <script>
+        let menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "400px"
+            }
+            else{
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+
+    <div class= "img-container">
+        <img src="assets\img\donations.jpg">
+    </div>
+    <center><h1 style="margin-top:20px; "> TYPES</h1></center>
+    <div class="container-donate" id="container">
+        
+        <div class="box">
+            <h1>Blood Donation</h1>
+            <img src="assets\img\blood.webp" width="325px" height="200px">
+            <p>Schedule your blood donation appointment with ease on our website's user-friendly system for both donars and centers.</p>
+            <h3> <a href="http://localhost:3000/bloodbank/login.php" style="color: cornflowerblue">Donate</a></h3>
+        </div>
+
+        <div class="box">
+            <h1>Organ Donation</h1>
+            <img src="assets\img\organ.webp" width="325px" height="200px">
+            <p>Join our organ donar community and save lives by giving organs like hearts,lungs,kidneys like skin and bones.</p>
+            <h3> <a href="organdonate.html" style="color: cornflowerblue">Donate</a></h3>
+        </div>
+
+        <div class="box">
+            <h1>Fund Donation</h1>
+            <img src="assets\img\fund.jpg" width="325px" height="200px">
+            <p>Fund Donars are contribute to support our mission by saves lives, improves medical access, and builds healthier communities.</p>
+            <h3><a href="funddonate.html" style="color: cornflowerblue">Donate</a></h3>
+        </div>
+
+    </div>
+    
+    <div class="container-zigzag">
+     <div class="row">
+       <div class="img">
+         <img src="assets/img/Donation.gif" width="300" height="250">
+       </div>
+       <div class="text" >
+         <h2>Donation</h2>
+         <p>Your donation is a powerful gesture that can transform lives and create lasting change. Whether you choose to contribute to medical research, support humanitarian aid efforts, or help provide essential resources to those in need, your generosity has the potential to make a significant impact. By giving back to your community or supporting causes close to your heart, you become an integral part of a global network of compassion and support. Every dollar donated helps fuel innovation, provide relief, and offer hope to individuals and communities facing challenges. Together, through acts of kindness and generosity, we can build a brighter, more inclusive world for all.</p>
+       </div>
+     </div>
+     
+     <div class="row">
+       <div class="text">
+         <h2>Blood Donation</h2>
+         <p>Your decision to donate blood can mean the difference between life and death for someone in need. It's a simple yet profoundly impactful act that anyone can do. When you donate blood, you're giving the gift of life to patients undergoing surgeries, recovering from accidents, battling cancer, or facing other medical emergencies. Just one donation can save up to three lives. Your blood could be the critical component that helps a patient through a medical crisis. Blood donations are essential for maintaining a stable supply for hospitals and medical centers. By donating, you're supporting your community and ensuring that blood is available when it's needed most. There's a profound sense of satisfaction in knowing that your donation directly helps others. It's a tangible way to make a positive impact on someone's life.</p>
+       </div>
+       <div class="img">
+         <img src="assets\img\blooddonation.jpg" width="300" height="250">
+       </div>
+     </div>
+     
+     <div class="row">
+       <div class="img">
+         <img src="assets\img\organdonation.png" width="250" height="250">
+       </div>
+       <div class="text">
+         <h2>Organ Donation</h2>
+         <p>Organ donation is a powerful act of kindness that knows no boundaries. It doesn't matter how old you are or what your background is. What matters is that you're willing to make a difference. By registering as an organ donor, you're joining a community of compassionate individuals who believe in the power of generosity.Think about the impact you can have. Your organs can save lives, restore health, and bring comfort to those in need. Whether it's a heart, kidney, liver, or other organs, each donation has the potential to transform lives in profound ways.Becoming an organ donor is easy and takes just a few moments of your time. Together, we can make a world where everyone has the chance to live a full and healthy life.</p>
+       </div>
+     </div>
+     
+     <div class="row" style="border-bottom:none;">
+      <div class="text">
+        <h2>Fund Donation</h2>
+        <p>Your generosity drives our mission forward. By donating to Medi Connect, you're not just giving money — you're investing in positive change. With your support, we can continue initiatives that directly impact communities, such as supporting healthcare, and protecting the environment. Together, we're transforming lives and communities for the better.Your contributions fund specific projects, programs, or initiatives that address pressing issues in our communities. Your support empowers individuals and communities to overcome challenges and seize opportunities. We're constantly innovating to find new and effective solutions to complex problems. Your donation fuels innovation and progress toward our shared goals.</p>
+      </div>
+      <div class="img">
+        <img src="assets\img\funddonation.jpg" width="300" height="250">
+      </div>
+    </div>
+  </div>
+     </body>
+     </html>
+     
+  

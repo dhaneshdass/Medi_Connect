@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/donation.css">
+<title>Medicare</title>
+<script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+ <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <h1>MEDICARE</h1>
+  </div>
+  <ul id="menuList">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="patients.html">Patients</a></li>
+    <li><a href="provides.html">Providers</a></li>
+    <li><a href="donation.html">Donation</a></li>
+    <li><a href="auth.html">Login</a></li>
+  </ul>
+  <div class="menu-icon">
+    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+  </div>
+</nav>
+
+    <script>
+        let menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "400px"
+            }
+            else{
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+        <div class= "img-container">
+             <img src="assets\img\organdonation.gif" width="1220px" height="560px">
+        </div>
+        <center>
+            <h1>Transform Lives Through Organ Donation</h1> <br>
+            <p>Organ donation is a powerful act of kindness that knows no boundaries. It doesn't matter how old you are or what your background is. What matters is that you're willing to make a difference. By registering as an organ donor, you're joining a community of compassionate individuals who believe in the power of generosity.Think about the impact you can have. Your organs can save lives, restore health, and bring comfort to those in need. Whether it's a heart, kidney, liver, or other organs, each donation has the potential to transform lives in profound ways.
+
+                Becoming an organ donor is easy and takes just a few moments of your time. Sign up today and let your decision be a beacon of hope for someone in their darkest hour. Together, we can make a world where everyone has the chance to live a full and healthy life.
+                
+                </p>
+        </center>
+  <center>
+    <section id="donation-form">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background: url('background.jpg') no-repeat center center fixed;
+                background-size: cover;
+                font-family: Arial, sans-serif;
+            }
+        
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 110vh;
+                width: 640px;
+            }
+        
+            .donation-form {
+                background-color: rgba(255, 255, 255, 0.7);
+                padding: 20px;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                margin-bottom: 150px;
+            }
+        
+            .donation-form h2 {
+                text-align: center;
+            }
+        
+            .donation-form input[type="text"],
+            .donation-form input[type="age"],
+            .donation-form input[type="gender"],
+            .donation-form input[type="date"],
+            .donation-form input[type="group"],
+            .donation-form input[type="number"],
+            .donation-form input[type="email"],
+            .donation-form input[type="address"],
+            .donation-form input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+        
+            .donation-form input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                cursor: pointer;
+            }
+        
+            .donation-form input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+        </head>
+        <body>
+        
+        <div class="container">
+            <form class="donation-form" action="#" method="post">
+                <h2>Make a Donation</h2>
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="number"  age="number" placeholder="Enter Your Age" required>
+                <input type="gender" name="gender" placeholder="Enter Your Gender" required>
+                <input type="date" id="dob" name="dob" required>
+                <input type="group" id="blood-type" placeholder="Enter Your Blood Group" required>
+                <input type="number" id="number" placeholder="Enter Your Phone Number" required>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <input type="address" name="address" rows="4" cols="50" placeholder="Enter Your Address" required>
+                <input type="submit" value="Donate">
+            </form>
+        </div>
+    <form action="your-donation-processing-script.php" method="post">
+   
+    
+
+</section></center>
+  </body>
+  </html>

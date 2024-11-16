@@ -1,0 +1,75 @@
+body, ul,html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.container-donate {
+    display: flex;
+    justify-content: space-around;
+      align-items: center;
+      height:500px;
+  }
+    
+  .box {
+      width: 350px;
+      height: 400px;
+      margin: 10px;
+      border: 3px solid #2ec8a6;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  
+  .box:hover{
+      transform: scale(1.1); 
+  }
+  .box h1,p,h3{
+      text-align:center;
+      margin:10px 10px;
+  }
+  .box img{
+      margin-left:10px;
+      margin-top:20px;
+  }
+  .container-zigzag {
+    width:90%;
+    margin:40px auto;
+    background-color: burlywood;
+    border-radius:20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    height:350px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-bottom:2px dotted black;
+  
+  }
+  .img-container img{
+      width:100%;
+      height:700px;
+  }
+  .img{
+    width:30%;
+    text-align:center;
+    margin:auto;
+  }
+  .img img{
+    border-radius:20px;
+    border:1px solid black;
+  } 
+  .text{
+    width:70%;
+    margin-right:5px;
+    margin-left:20px;
+    margin-top:30px;
+  }
+  .text h2{
+    text-align:center;
+  }
+  .text p{
+    text-align: justify;
+    margin-right: 30px;
+    font-size:20px;
+  }

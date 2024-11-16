@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Details</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: #333;
+    }
+    .doctor-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .doctor-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 20px;
+      border: 4px solid #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .details {
+      flex-grow: 1;
+    }
+    .details h2 {
+      margin: 0;
+      color: #333;
+    }
+    .details p {
+      margin: 5px 0;
+      color: #666;
+    }
+    .action-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .action-links a {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .action-links a:hover {
+      background-color: #0056b3;
+    }
+    @media screen and (max-width: 600px) {
+      .doctor-card {
+        flex-direction: column;
+        text-align: center;
+      }
+      .doctor-card img {
+        margin: 0 0 20px;
+      }
+      .action-links {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Doctor Details</h1>
+    <div class="doctor-card">
+      <img src="doctor-image.jpg" alt="Doctor">
+      <div class="details">
+        <h2>Dr. John Doe</h2>
+        <p>Specialty: Cardiology</p>
+        <p>Education: MD, Cardiology</p>
+        <p>Experience: 10 years</p>
+        <p>Location: Hospital Name, City</p>
+        <p>Contact: 123-456-7890</p>
+      </div>
+      <div class="action-links">
+        <a href="#">Book Appointment</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+</html>
